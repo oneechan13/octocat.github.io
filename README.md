@@ -23,6 +23,3 @@ This project showcases a simple and clean website layout designed to demonstrate
 - Clean and accessible HTML structure
 - Custom styling with CSS
 - Hosted publicly on GitHub Pages
-
-## 📁 Folder Structure
-
