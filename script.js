@@ -158,6 +158,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 // end contact tab
+
+
+//go to top
 window.onscroll = function() {
   const btn = document.getElementById("goTopBtn");
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -174,7 +177,4 @@ function scrollToTop() {
     behavior: "smooth"
   });
 }
-
-//go to top
-
 //end go to top
