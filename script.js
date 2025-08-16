@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const images = thumbs.map((img) => img.getAttribute("src"));
   let currentIndex = 0;
 
-  // Set total images count
   totalImagesEl.textContent = images.length;
   modalTotalImagesEl.textContent = images.length;
 
@@ -133,13 +132,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const tabBtns = document.querySelectorAll(".tab-btn");
   const tabContents = document.querySelectorAll(".tab-content");
 
-  // Show the first tab by default
   document.querySelector(".tab-btn").classList.add("active");
   document.querySelector(".tab-content").classList.add("active");
 
   tabBtns.forEach((btn) => {
     btn.addEventListener("click", function () {
-      // Remove active class from all buttons and contents
       tabBtns.forEach((btn) => btn.classList.remove("active"));
       tabContents.forEach((content) => content.classList.remove("active"));
 
@@ -155,10 +152,29 @@ document.addEventListener("DOMContentLoaded", function () {
   if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
-      // Here you would typically send the form data to your server
       alert("Thank you for your message! I will get back to you soon.");
       this.reset();
     });
   }
 });
 // end contact tab
+window.onscroll = function() {
+  const btn = document.getElementById("goTopBtn");
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+// Scroll to top when button is clicked
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
+//go to top
+
+//end go to top
