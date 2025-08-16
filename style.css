@@ -149,8 +149,6 @@ body {
 /* Hero Section End */
 
 /* Section 2 Styles */
-/* Enhanced Section 2 Styles */
-/* Enhanced Section 2 Styles */
 .realtor-profile {
   background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
   padding: 80px 0;
@@ -486,7 +484,7 @@ body {
 /* section 4 start  */
 /* Section 4 Styles */
 .search-section {
-  background: url("/images/mls-background.jpg") center/cover no-repeat;
+  background: url("images/mls-background.jpg") center/cover no-repeat;
   padding: 50px 20px;
   display: flex;
   justify-content: center;
@@ -543,7 +541,6 @@ body {
 .search-form button:hover {
   background: #ff4b1f;
 }
-
 /* section 4 end  */
 
 /* section 5 start  */
@@ -902,7 +899,6 @@ body {
 }
 /* section 6 end */
 
-/* Our Services Section */
 /* Our Services Section */
 .services-section {
   padding: 80px 0;
